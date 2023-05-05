@@ -1,0 +1,146 @@
+header {
+	height: 60px;
+}
+
+header .brand-s {
+	display: none;
+}
+
+header .burger-wrapper {
+  position: absolute;
+  top: 16px;
+  left: 30px;
+  width: 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+header .burger {
+  width: 20px;
+  height: 3px;
+  background-color: #252120;
+  position: relative;
+}
+header .burger:before, header .burger:after {
+  content: '';
+  width: 20px;
+  height: 3px;
+  background-color: #252120;
+  position: absolute;
+  left: 0;
+}
+header .burger:before {
+  top: -6px;
+}
+header .burger:after {
+  top: 6px;
+  width: 14px;
+}
+
+.brand-s > h5 {
+	border-bottom: 1px solid #c6d0da;
+}
+
+.gn-menu-main > li.brand-l > a {
+  width: 140px;
+  position: absolute;
+  /* border-left: 1px solid #ddd; */
+  height: 100%;
+  padding: 0;
+  padding-left: 46px;
+}
+
+@media (max-width: 1024px) {
+	.gn-menu-main > li.brand-l > a {
+	  padding: 0;
+		top: 0; 
+		left: 50%; 
+		margin-left: -65px;
+		border: 0;
+	}
+}
+
+.gn-menu-main {
+	z-index: 40;
+}
+
+.gn-menu-main > li > a {
+	font-size: 0.875rem;
+	font-weight: normal;
+}
+
+.gn-menu-main > li > a.gn-icon-menu {
+	width: 40px;
+	height: 100%;
+	transition: width 120ms cubic-bezier(0.4,0.0,0.2,1);
+}
+
+.gn-menu-main > li > a.gn-icon-menu.gn-selected {
+	background-color: #2196F3;
+	border-radius: 0 40px 40px 0;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+	width: 100px;
+}
+
+.gn-menu-main > li > a.nav-icon {
+	padding: 0 12px;
+}
+
+.gn-menu-main > li > a.nav-icon > i {
+	font-size: 20px;
+	color: #82B1FF;
+	position: relative;
+	top: 4px;
+}
+
+.gn-menu-main > li > .notification-icon.on > i {
+	color: #2979FF;
+}
+
+.gn-menu-main > li > a.gn-icon-menu.gn-selected .burger {
+	background-color: #fff;
+}
+
+.gn-menu-main > li > a.gn-icon-menu.gn-selected .burger:before, .gn-menu-main > li > a.gn-icon-menu.gn-selected .burger:after {
+  background-color: #fff;
+}
+
+header .notification-icon > .count-badge {
+	position: absolute;
+	top: 7px;
+	right: 2px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 24px;
+	color: #fff;
+	background-color: #D50000;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	z-index: 8;
+	display: none;
+}
+
+header .notification-icon.on > .count-badge {
+	display: block;
+}
+
+header .gn-menu-main > li > .avatar-frame {
+	position: relative;
+	padding: 0 0.625rem;
+	margin-top: -2px;
+}
+
+@media (max-width: 480px) {
+	.gn-menu-main > li > a {
+		padding: 0 10px;
+	}
+
+	header .brand-l {
+		display: none;
+	}
+
+	header .brand-s {
+		display: block;
+	}
+}

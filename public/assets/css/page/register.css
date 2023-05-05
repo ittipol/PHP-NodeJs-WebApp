@@ -1,0 +1,42 @@
+.register-page hr {
+	background-color: #bbb;
+}
+
+.register-page {
+	width: 450px;
+	min-height: 500px;
+	margin: 0 auto;
+	padding: 48px 40px 36px;
+	background-color: #fff;
+	border: 1px solid rgb(218,220,224);
+	/*box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);*/
+	border-radius: 8px;
+}
+
+.register-page .custom-checkbox .custom-control-indicator {
+	background-color: #1E88E5;
+	outline: none;
+}
+
+.register-page img.logo {
+	width: 150px;
+}
+
+#model_register_form.modal-register-form .c-modal-inner {
+	/*width: 380px;*/
+	min-width: auto;
+	padding: 0;
+}
+
+@media only screen and (max-width : 480px) {
+	.register-page {
+		width: 100%;
+		border: 0;
+		padding: 3.4375rem 0.9375rem;
+		box-shadow: none;
+	}
+
+	.register-page img.logo {
+		width: 135px;
+	}
+}

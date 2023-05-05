@@ -1,0 +1,96 @@
+.order-status-box {
+	position: relative;
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 50px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.order-status-box > .order-status-item {
+	position: relative;
+	width: 20%;
+	text-align: center;
+	z-index: 10;
+}
+
+.order-status-item > .order-status-icon {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	margin: auto;
+	line-height: 34px;
+	border-radius: 50%;
+	font-size: 3rem;
+	color: #9E9E9E;
+	background-color: #fff;
+	border: 4px solid #9E9E9E;
+}
+
+.order-status-icon > i {
+	font-size: 28px;
+}
+
+.order-status-item.step-success > .order-status-icon {
+	color: #2dc258;
+	border-color: #2dc258;
+}
+
+.order-status-progress-line {
+	position: absolute;
+	top: 49px;
+	left: 11%;
+	background-color: #9E9E9E;
+	width: 78%;
+	height: 5px;
+	z-index: 5;
+}
+
+.order-status-progress-line > .order-status-progress {
+	width: 0;
+	height: 100%;
+	background-color: #2dc258;
+	transition: width .74s cubic-bezier(.25,.1,.25,1);
+}
+
+@media (max-width: 480px) {
+  .order-status-item > .order-status-icon {
+  	width: 50px;
+  	height: 50px;
+  	line-height: 22px;
+  }
+
+  .order-status-icon > i {
+  	font-size: 24px;
+  }
+
+  .order-status-progress-line {
+  	top: 45px;
+  }
+}
+
+.order-status-item .order-status-label {
+	font-size: 15px;
+  color: rgba(0,0,0,.8);
+  /*line-height: 2rem;*/
+  margin: 6px 0 0;
+}
+
+.order-status-item .order-status-secondary-label {
+	font-size: 13px;
+  color: rgba(0,0,0,.26);
+}
+
+.order-info-box {
+	background-color: #fff;
+	border-top: 4px solid #efefef;
+	margin-top: 16px;
+	padding: 10px 20px;
+	/*box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);*/
+	box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+}
+
+.order-seller-w-item > .order-seller-w-item-list:not(:first-child) {
+	border-top: 4px solid #aaa;
+	margin-top: 40px;
+	padding-top: 40px;
+}

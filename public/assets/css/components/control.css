@@ -1,0 +1,209 @@
+.c-input input[type="checkbox"],
+.c-input input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.c-input label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.c-input label::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgb(22,160,133);
+  border-radius: 4px;
+  z-index: -1;
+}
+.c-input input[type="radio"] + label::before {
+  border-radius: 18px;
+}
+
+.c-input input[type="radio"]:checked + label::before {
+  border-radius: 26px;
+}
+
+.c-input input[type="checkbox"]:checked + label,
+.c-input input[type="radio"]:checked + label {
+  padding-left: 10px;
+  color: #fff;
+}
+.c-input.c-input-lg input[type="checkbox"]:checked + label,
+.c-input.c-input-lg input[type="radio"]:checked + label {
+  padding-left: 50px;
+  padding-right: 50px
+}
+.c-input input[type="checkbox"]:checked + label::before,
+.c-input input[type="radio"]:checked + label::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(22,160,133);
+}
+
+.c-input label,
+.c-input label::before {
+  transition: .25s all ease;
+}
+
+.left-sidenav .c-input label::before {
+  /*border: 2px solid rgba(255,255,255,.3);*/
+  border: 2px solid rgba(0,0,0,.3);
+}
+
+.left-sidenav .c-input input[type="checkbox"]:checked + label::before,
+.left-sidenav .c-input input[type="radio"]:checked + label::before {
+  /*background: rgba(255,255,255,.15);*/
+  /*background: rgba(0,0,0,.6);*/
+  border: 2px solid #FB8C00;
+  background: #FB8C00;
+}
+
+@media (max-width: 1024px) {
+  .left-sidenav .c-input label::before {
+    border: 2px solid rgba(255,255,255,.3);
+  }
+
+  .left-sidenav .c-input input[type="checkbox"]:checked + label::before,
+  .left-sidenav .c-input input[type="radio"]:checked + label::before {
+    background: rgba(255,255,255,.15);
+    border: 2px solid rgba(255,255,255,.3);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 1px transparent;
+  }
+  50% {
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 15px transparent;
+  }
+}
+.md-radio {
+  margin: 10px 0;
+}
+.md-radio.md-radio-inline {
+  display: inline-block;
+}
+.md-radio input[type="radio"] {
+  display: none;
+}
+.md-radio input[type="radio"]:checked + label:before {
+  border-color: #4DB6AC;
+  animation: ripple 0.2s linear forwards;
+}
+.md-radio input[type="radio"]:checked + label:after {
+  transform: scale(1);
+}
+.md-radio label {
+  width: 100%;
+  position: relative;
+  padding: 0 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.md-radio label:before, .md-radio label:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  transition: all .3s ease;
+  transition-property: transform, border-color;
+}
+.md-radio label:before {
+  left: 0;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+}
+.md-radio label:after {
+  top: 10px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  background: #4DB6AC;
+}
+
+
+
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border: 1px solid #b0bec5;
+  transition: background .45s cubic-bezier(0.15, 1, 0.3, 1);
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+/*.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}*/
+.control input:checked ~ .control__indicator {
+  /*background: #2aa1c0;*/
+  background: #3F51B5;
+}
+/*.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}*/
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  top: 2px;
+  left: 7px;
+  width: 5px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}

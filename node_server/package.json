@@ -1,0 +1,23 @@
+{
+  "name": "NodeServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "connect-redis": "^3.3.2",
+    "express": "^4.16.1",
+    "md5": "^2.2.1",
+    "moment-timezone": "^0.5.14",
+    "mysql": "github:mysqljs/mysql",
+    "nodemailer": "^4.2.0",
+    "redis": "^2.8.0",
+    "socket.io": "^2.0.3",
+    "striptags": "^3.1.0"
+  }
+}

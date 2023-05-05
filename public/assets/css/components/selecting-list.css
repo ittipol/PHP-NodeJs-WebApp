@@ -1,0 +1,49 @@
+.selecting-action {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	min-height: 60px;
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+
+.selecting-action > .selecting-action-inner {
+	max-width: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.selecting-lable {
+	color: #555;
+	font-size: 1rem;
+}
+
+.selecting-lable > span {
+	color: #5D4037;
+	font-size: 1.125rem;
+	line-height: 32px;
+}
+
+.selecting-lable-box {
+	position: relative;
+	width: 100%;
+	background-color: #F5F5F5;
+	border: 1px solid #90A4AE;
+	cursor: pointer;
+}
+
+.selecting-lable-box .selected-value {
+	padding: 6px 12px;
+	color: #555;
+}
+
+.selecting-lable-box .selected-value-delete {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 6px 18px;
+}

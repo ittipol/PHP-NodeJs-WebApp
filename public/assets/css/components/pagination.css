@@ -1,0 +1,90 @@
+.pagination li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.pagination li a {
+  color: #444;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.pagination li.active a {
+  color: #fff;
+}
+
+.pagination li.active {
+  background-color: #009688;
+}
+
+.pagination li.disabled a {
+  cursor: default;
+  color: #999;
+}
+
+.pagination li i {
+  font-size: 1rem;
+}
+
+.pagination li.pages ul li {
+  display: inline-block;
+  float: none;
+}
+
+.pagination-btn-group {
+  width: 100%;
+}
+
+.pagination-btn {
+  padding: 6px 16px;
+}
+
+.pagination-btn a {
+  color: #607D8B !important; 
+  padding: 6px 24px;
+  font-size: 16px;
+  border-radius: 18px;
+  background-color: #fff;
+  /*box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);*/
+  box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+  transition: box-shadow .08s linear,min-width .15s cubic-bezier(0.4,0.0,0.2,1);
+  display: inline-block;
+}
+
+/*.pagination-btn a:focus {
+  color: #26a69a;
+  box-shadow: none;
+}*/
+
+.pagination-btn a:hover {
+  box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+}
+
+@media (max-width: 480px) {
+  .pagination-btn a {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 10px 24px;
+    border-radius: 0;
+  }
+
+  .pagination-btn {
+    /*margin: 15px;*/
+    padding: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    /*box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);*/
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+  }
+
+  .pagination-btn > .btn {
+    padding: 2px 0;
+    width: 50%;
+  }
+}

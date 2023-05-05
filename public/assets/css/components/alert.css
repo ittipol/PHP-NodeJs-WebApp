@@ -1,0 +1,26 @@
+/*.alert.alert-plain {
+}*/
+
+.alert.alert-secondary {
+	/*background-color: #CFD8DC;*/
+	background-color: #eaeaea;
+	border-color: #ECEFF1;
+}
+
+@media (max-width: 480px) {
+	.alert.alert-secondary {
+		font-size: 14px;
+	}
+
+	.alert .alert-heading {
+		font-size: 20px;
+	}
+
+	.alert .alert-heading i {
+		font-size: 16px;
+	}
+
+  .alert p {
+  	font-size: 16px;
+  }
+}

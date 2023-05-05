@@ -1,0 +1,175 @@
+.selecting-list {
+	width: 760px;
+	max-width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+@media (max-width: 480px) {
+	.selecting-list {
+		padding-bottom: 60px;
+	}
+}
+
+.list-item-panel .list-item {
+	position: relative;
+	padding: 6px 0;
+}
+
+.list-item-panel .list-item.edge {
+	padding: 6px 15px 6px 35px;
+}
+
+.list-item .list-item-label {
+	padding-right: 50px;
+}
+
+.list-item .list-item-label a {
+	color: #666;
+	font-size: 18px;
+	line-height: 22px;
+	display: block;
+	padding: 4px 0;
+}
+
+/*.list-item:hover {
+	background-color: rgba(0,0,0,.1);
+}*/
+
+.list-item .list-item-label a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.list-item .list-item-label small {
+	margin-left: 6px;
+}
+
+.list-item .list-next-btn {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background-color: #328bf2;
+	border-radius: 50%;
+	box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+	cursor: pointer;
+}
+
+.list-item.list-item-icon .list-next-btn {
+	top: 16px;
+}
+
+.list-item .list-next-btn:hover {
+	background-color: #1644ad;
+}
+
+.list-item .list-next-btn > i {
+	color: #fff;
+	font-size: 1rem;
+	margin-top: 8px;
+}
+
+.list-item.list-back-btn {
+	margin-bottom: 20px !important;
+	cursor: pointer;
+}
+
+.list-item.selected:before {
+  font-family: 'FontAwesome5Free';
+  content: "\f00c";
+  font-weight: 900;
+  color: #448AFF;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+.list-item img.list-image {
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+}
+
+.list-group.addition-menu .list-group-item {
+  background-color: transparent;
+  border: 0;
+  padding: 10px 0;
+}
+
+.list-group.addition-menu .list-group-item h6 {
+  line-height: 25px;
+}
+
+.list-group.addition-menu .list-group-item a {
+  color: #fff;
+  text-decoration: none !important; 
+  width: 100%;
+  padding: 6px 6px;
+  margin: 0 14px;
+}
+
+.list-group.addition-menu .list-group-item:hover a{
+  background-color: rgba(255,255,255,.19);
+  /*background-color: rgba(0,0,0,.19);*/
+  border-radius: 40px;
+}
+
+.list-group.addition-menu .list-group-item a.btn-secondary {
+  height: auto;
+  margin-left: 20px;
+  padding: 0;
+  border-radius: 20px;
+  line-height: 36px;
+}
+
+.list-group.addition-menu .list-group-item i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: rgb(100,100,100);
+  text-align: center;
+  margin-right: 10px;
+}
+
+.list-group.addition-menu.list-group-light .list-group-item a {
+  color: #eee;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.list-group.addition-menu.list-group-light .list-group-item i {
+  color: #eaeaea;
+}
+
+.list-group.addition-menu.list-group-dark .list-group-item a {
+  color: #0a0a0a;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.list-group.addition-menu.list-group-dark .list-group-item i {
+  color: #000000;
+}
+
+.list-group.addition-menu.list-group-dark .list-group-item:hover a{
+  background-color: rgba(0,0,0,.1);
+  border-radius: 20px;
+}
+
+.list-group.addition-menu .list-group-item .user-blocking-icon > i {
+  margin-right: 5px;
+}
+
+.list-group.addition-menu .list-group-item .avatar-frame {
+	display: inline-block;
+}
+
+.list-group.addition-menu .list-group-item .avatar-frame > img {
+	border-radius: 50%;
+}
