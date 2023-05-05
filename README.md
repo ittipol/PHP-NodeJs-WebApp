@@ -13,8 +13,7 @@ mysql -u root -p
 
 type "1234"
 
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY
-'1234';
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '1234';
 
 flush privileges;
 ```
