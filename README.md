@@ -1,14 +1,14 @@
-## Start via docker compose
-
-``` bash
-docker compose up -d --build
-```
-
 ## Software stack
 - Laravel
 - Node.Js
 - MySQL
 - Redis
+
+## Start via docker compose
+
+``` bash
+docker compose up -d --build
+```
 
 ## Grant access mysql
 
