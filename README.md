@@ -1,8 +1,14 @@
 ## Start via docker compose
 
 ``` bash
-docker-compose up -d --build
+docker compose up -d --build
 ```
+
+## Software stack
+- Laravel
+- Node.Js
+- MySQL
+- Redis
 
 ## Grant access mysql
 
@@ -25,6 +31,6 @@ docker start web-app-nodejs
 
 ## Test
 
-after start server
+After server started
 
 Open [http://localhost:8080](http://localhost:8080) with your browser to test service and application.
